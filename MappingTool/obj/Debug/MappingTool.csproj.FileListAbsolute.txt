@@ -7,3 +7,6 @@ C:\GitHub\ProjectVisualXML\MappingTool\MappingTool\MappingTool\obj\Debug\Mapping
 C:\GitHub\ProjectVisualXML\MappingTool\MappingTool\MappingTool\obj\Debug\MappingTool.csproj.GenerateResource.Cache
 C:\GitHub\ProjectVisualXML\MappingTool\MappingTool\MappingTool\obj\Debug\MappingTool.exe
 C:\GitHub\ProjectVisualXML\MappingTool\MappingTool\MappingTool\obj\Debug\MappingTool.pdb
+C:\GitHub\MappingTool\MappingTool\bin\Debug\MappingTool.exe.config
+C:\GitHub\MappingTool\MappingTool\obj\Debug\MappingTool.exe
+C:\GitHub\MappingTool\MappingTool\obj\Debug\MappingTool.pdb
