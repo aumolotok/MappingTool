@@ -1,0 +1,9 @@
+C:\GitHub\ProjectVisualXML\MappingTool\MappingTool\MappingTool\bin\Debug\MappingTool.exe.config
+C:\GitHub\ProjectVisualXML\MappingTool\MappingTool\MappingTool\bin\Debug\MappingTool.exe
+C:\GitHub\ProjectVisualXML\MappingTool\MappingTool\MappingTool\bin\Debug\MappingTool.pdb
+C:\GitHub\ProjectVisualXML\MappingTool\MappingTool\MappingTool\obj\Debug\MappingTool.csprojResolveAssemblyReference.cache
+C:\GitHub\ProjectVisualXML\MappingTool\MappingTool\MappingTool\obj\Debug\MappingTool.Form1.resources
+C:\GitHub\ProjectVisualXML\MappingTool\MappingTool\MappingTool\obj\Debug\MappingTool.Properties.Resources.resources
+C:\GitHub\ProjectVisualXML\MappingTool\MappingTool\MappingTool\obj\Debug\MappingTool.csproj.GenerateResource.Cache
+C:\GitHub\ProjectVisualXML\MappingTool\MappingTool\MappingTool\obj\Debug\MappingTool.exe
+C:\GitHub\ProjectVisualXML\MappingTool\MappingTool\MappingTool\obj\Debug\MappingTool.pdb
