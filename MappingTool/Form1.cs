@@ -22,8 +22,11 @@ namespace MappingTool
         {
 
             Console.WriteLine("5");
-            XDocument XDoc = XDocument.Load(@"C:\GitHub\MappingTool");
-            //Console.WriteLine(XDoc);
+            XDocument XDoc = XDocument.Load(@"C:\GitHub\MappingTool\XMLFile1.xml");
+            Console.WriteLine(XDoc);
+            //some new code
+            // little more
+            // and more
             List<XElement> testlist = Converter.XmlEater(XDoc);
             Converter.ShowXpaths(testlist);
         }
