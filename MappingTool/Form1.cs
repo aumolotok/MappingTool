@@ -20,48 +20,17 @@ namespace MappingTool
 
         private void button1_Click(object sender, EventArgs e)
         {
-
             Console.WriteLine("5");
             XDocument XDoc = XDocument.Load(@"C:\GitHub\MappingTool\XMLFile1.xml");
             Console.WriteLine(XDoc);
-            //some new code
-            // little more
-            // and more
-            //more
             List<XElement> testlist = Converter.XmlEater(XDoc);
             Converter.ShowXpaths(testlist);
         }
-
-        
-
-
-
-
-   
-}
-
-    class MappingFromXML
-    {
-        public string xpath;
-        public MappingFromXML() { }
-
-        public MappingFromXML(XElement innernode)
-        {
-            string xpath = "";
-
-            var Array = innernode.AncestorsAndSelf().ToArray(); // List to Array, список предков
-
-            for (int i = Array.Count() - 1; i >= 0; i--)
-            {
-                xpath = string.Join(@"/", xpath, Array[i].Name);
-                //Console.WriteLine(Array[i].Name + @"/"); // Вывод предков в обратном порядке (как в Xpath)
-            }
-
-            this.xpath = xpath;
-        }
     }
-
 }
+
+
+
 //    static public void WR()
 //    {
 //        //public void WR() { }
