@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<head>
+  <levels>
+    <level1>
+      <name>Fox</name>
+      <lastname>Sly</lastname>
+      <Number>1</Number>
+      <properties>
+        <speed>100mph</speed>
+        <spell>Love</spell>
+      </properties>
+    </level1>
+    <level2>
+      <name>Aper</name>
+      <lastname>Strong</lastname>
+      <Number>2</Number>
+      <properties>
+        <speed>100</speed>
+        <spell>FoxFuck</spell>
+      </properties>
+    </level2>
+  </levels>
+</head>

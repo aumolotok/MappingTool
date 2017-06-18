@@ -7,12 +7,15 @@ using System.Xml.Linq;
 
 namespace MappingTool
 {
-    class MappingFromXML
+    class NodeFromXml
     {
-        public string xpath;
-        public MappingFromXML() { }
+        private string xpathFormMapping { get; set; }
 
-        public MappingFromXML(XElement innernode)
+        private ;
+
+        public NodeFromXml() { }
+
+        public NodeFromXml(XElement innernode)
         {
             string xpath = "";
 
@@ -24,7 +27,7 @@ namespace MappingTool
                 //Console.WriteLine(Array[i].Name + @"/"); // Вывод предков в обратном порядке (как в Xpath)
             }
 
-            this.xpath = xpath;
+            this.xpathFormMapping = xpath;
         }
     }
 }

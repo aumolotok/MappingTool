@@ -10,6 +10,15 @@ namespace MappingTool
     class NodeFromMapping
     {
         private string mainXpath { get; set; }
+    
+        public NodeFromMapping() { }
+
+        public NodeFromMapping( string mainXpath, string necXpath) 
+        {
+            this.mainXpath = mainXpath;
+            Necessary Necnode = new Necessary(necXpath);
+            
+        }
 
         class Necessary
         {
@@ -21,18 +30,6 @@ namespace MappingTool
             {
                 this.necessaryNodeXpath = necessaryNodeXpath;
             }
-
         }
-    
-        public NodeFromMapping() { }
-
-        public NodeFromMapping( string mainXpath, string necXpath) 
-        {
-            this.mainXpath = mainXpath;
-            Necessary Necnode = new Necessary(necXpath);
-            
-        }
-
-
     }
 }
