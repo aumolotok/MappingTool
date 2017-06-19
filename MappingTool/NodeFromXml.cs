@@ -9,25 +9,30 @@ namespace MappingTool
 {
     class NodeFromXml
     {
-        private string xpathFormMapping { get; set; }
-
-        private ;
+        public string xpathFormMapping { get; set; } 
+        public string value { get; set; }
+        public List<XElement> ancestors { get; set; }    
 
         public NodeFromXml() { }
 
         public NodeFromXml(XElement innernode)
         {
-            string xpath = "";
+            string xpath = null;
+            ancestors = innernode.AncestorsAndSelf().ToList();
 
             var Array = innernode.AncestorsAndSelf().ToArray(); // List to Array, список предков
 
             for (int i = Array.Count() - 1; i >= 0; i--)
             {
-                xpath = string.Join(@"/", xpath, Array[i].Name);
-                //Console.WriteLine(Array[i].Name + @"/"); // Вывод предков в обратном порядке (как в Xpath)
+                if (xpath != null)
+                    xpath = string.Join(@"/", xpath, Array[i].Name);
+                else
+                    xpath = Array[i].Name.ToString();
             }
 
             this.xpathFormMapping = xpath;
+
+            value = innernode.Value;
         }
     }
 }

@@ -37,6 +37,14 @@ namespace MappingTool
 
         }
 
+        public static bool IsNodeHasSameParent( XNode element1, XNode element2)
+        {
+            if (element1.Parent == element2.Parent)
+                return true;
+            else
+                return false;
+        }
+
 
 
 

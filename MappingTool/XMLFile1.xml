@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <head>
-  <levels>
+  <Forest number ="1">
     <level1>
       <name>Fox</name>
       <lastname>Sly</lastname>
@@ -19,5 +19,25 @@
         <spell>FoxFuck</spell>
       </properties>
     </level2>
-  </levels>
+  </Forest>
+  <Forest number ="2">
+    <level1>
+      <name>Foxy</name>
+      <lastname>Sly</lastname>
+      <Number>1</Number>
+      <properties>
+        <speed>100mph</speed>
+        <spell>Love</spell>
+      </properties>
+    </level1>
+    <level2>
+      <name>Apery</name>
+      <lastname>Strong</lastname>
+      <Number>2</Number>
+      <properties>
+        <speed>100</speed>
+        <spell>FoxFuck</spell>
+      </properties>
+    </level2>
+  </Forest>
 </head>
