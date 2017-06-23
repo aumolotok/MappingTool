@@ -23,7 +23,7 @@ namespace MappingTool
             
 
             Console.WriteLine("5");
-            XDocument XDoc = XDocument.Load(@"C:\GitHub\MappingTool\XMLFile1.xml");
+            XDocument XDoc = XDocument.Load(@"C:\GitHub\MappingTool\MappingTool\XMLFile1.xml");
             //Console.WriteLine(XDoc);
             List<XElement> testlist = Converter.XmlEater(XDoc);
             //Converter.ShowXpaths(testlist);
@@ -42,10 +42,24 @@ namespace MappingTool
             }
         }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            XDocument XDoc = XDocument.Load(@"C:\GitHub\MappingTool\MappingTool\XMLFile1.xml");
+            List<XElement> ellist = new List<XElement>();
 
+            IEnumerable<XElement> a = from el in XDoc.Descendants()
+                                      where el.Value != null && el.Descendants().Count() == 0 && el.Name == "name" && (el.Value == "Fox" | el.Value == "Foxy")   
+                                      select el;
+            //List<XElement> b  = a.ToList();
+            foreach (XElement aa in a)
+            {
+                Console.WriteLine(aa.Value);
+            }
 
+            //Console.WriteLine(a);
 
-
+            //Converter.ShowXpaths(b);
+        }
     }
 
 

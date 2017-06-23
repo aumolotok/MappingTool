@@ -37,7 +37,29 @@ namespace MappingTool
 
         }
 
+        public static XElement ListFromOneVarToOneVar (IEnumerable<XElement> XeIenum)
+        {            
+                XElement[] Array = XeIenum.ToArray();
+                XElement Result = Array[0];
+                return Result;           
+        }
+
+        public static XElement ListFromOneVarToOneVar(List<XElement> XeIenum)
+        {
+            XElement[] Array = XeIenum.ToArray();
+            XElement Result = Array[0];
+            return Result;
+        }
+
         public static bool IsNodeHasSameParent( XNode element1, XNode element2)
+        {
+            if (element1.Parent == element2.Parent)
+                return true;
+            else
+                return false;
+        }
+
+        public static bool IsNodeHasSameParent(XElement element1, XElement element2)
         {
             if (element1.Parent == element2.Parent)
                 return true;
